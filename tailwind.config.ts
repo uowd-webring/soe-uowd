@@ -6,6 +6,7 @@ const config: Config = {
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/**/*.{js,ts,jsx,tsx,mdx}",
     "*.{js,ts,jsx,tsx,mdx}"
   ],
   theme: {
@@ -88,7 +89,14 @@ const config: Config = {
   		animation: {
   			'accordion-down': 'accordion-down 0.2s ease-out',
   			'accordion-up': 'accordion-up 0.2s ease-out'
-  		}
+  		},
+  		fontFamily: {
+  			sans: ['var(--font-geist-sans)'],
+  			mono: ['var(--font-geist-mono)'],
+  			'sf-pro': ['SF Pro', 'system-ui', 'sans-serif'],
+  			'sf-mono': ['SF Mono', 'monospace'],
+  			'sf-compact': ['SF Compact', 'system-ui', 'sans-serif'],
+  		},
   	}
   },
   plugins: [require("tailwindcss-animate")],

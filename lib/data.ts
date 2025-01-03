@@ -1,39 +1,37 @@
-// Types for our student entries
-export interface Student {
-  name: string;
-  year: number;
-  major: string;
-  portfolioLink: string;
-}
+import { students, Student } from './students';
 
-// Available majors in the School of Engineering
+export { students };
+export type { Student };
+
 export const majors = [
-  "Computer Science",
   "Computer Engineering",
   "Electrical Engineering",
+  "Telecommunications Engineering",
   "Mechanical Engineering",
-  "Civil Engineering",
-] as const;
-
-// Sample data - in production, this could be loaded from a JSON file or API
-export const students: Student[] = [
-  {
-    name: "Alex Thompson",
-    year: 2024,
-    major: "Computer Science",
-    portfolioLink: "https://alexthompson.dev"
-  },
-  {
-    name: "Sarah Chen",
-    year: 2025,
-    major: "Electrical Engineering",
-    portfolioLink: "https://sarahchen.io"
-  },
-  // Add more student entries here
+  "Mechatronic Engineering",
+  "Civil Engineering"
 ];
 
 // Get unique years from the students array
 export const getUniqueYears = () => {
-  return Array.from(new Set(students.map(student => student.year))).sort();
-};
+  const priorityNames = ["Ayman Mohammed", "Taha Parker"];
+  const sortedStudents = students.sort((a, b) => {
+    // Check if either student is in priority names
+    const aIsPriority = priorityNames.includes(a.name);
+    const bIsPriority = priorityNames.includes(b.name);
 
+    if (aIsPriority && !bIsPriority) return -1;
+    if (!aIsPriority && bIsPriority) return 1;
+    if (aIsPriority && bIsPriority) {
+      return priorityNames.indexOf(a.name) - priorityNames.indexOf(b.name);
+    }
+
+    // If neither is priority, sort by year and then name
+    if (a.year !== b.year) {
+      return a.year - b.year;
+    }
+    return a.name.localeCompare(b.name);
+  });
+
+  return Array.from(new Set(sortedStudents.map(student => student.year))).sort();
+};
