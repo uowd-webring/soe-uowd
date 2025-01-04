@@ -95,14 +95,14 @@ export default function Home() {
         <div className="fixed top-0 left-0 right-0 h-[350px] bg-black z-40 mb-0"></div>
         <div className="fixed top-20 left-0 right-0 flex flex-col items-center z-50 pt-12 pb-4">
           <style>{searchInputStyles}</style>
-          <h1 className="font-sf-pro font-bold text-[64px] text-white tracking-tight mb-2">
+          <h1 className="font-sf-pro font-bold text-[64px] md:text-[64px] text-[40px] text-white tracking-tight mb-2 text-center px-4">
             SOE@UOWD
           </h1>
-          <p className="font-sf-compact text-[rgb(160,160,160)] text-base mb-12">
+          <p className="font-sf-compact text-[rgb(160,160,160)] text-base mb-12 text-center px-4">
             A collection of portfolio websites from UOWD School of Engineering students
           </p>
 
-          <div ref={searchSectionRef} className="flex flex-row items-center justify-center mb-8 w-[65%] border-b border-[rgb(160,160,160)]">
+          <div ref={searchSectionRef} className="flex flex-row items-center justify-center mb-8 w-[90%] md:w-[65%] border-b border-[rgb(160,160,160)]">
             <Search 
               ref={searchIconRef}
               className="h-[15px] w-[15px] text-[rgb(160,160,160)]" 
@@ -132,7 +132,7 @@ export default function Home() {
         </div>
 
         <div className="w-full mt-[380px] relative z-0 pb-20">
-          <ul ref={tableRef} className="list-none grid grid-cols-3 gap-x-16 gap-y-8 w-[65%] mx-auto">
+          <ul ref={tableRef} className="list-none grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 md:gap-x-16 gap-y-8 w-[90%] md:w-[65%] mx-auto px-4 md:px-0">
             {filteredStudents.map((student) => (
               <StudentCard key={`${student.name}-${student.year}`} student={student} />
             ))}
