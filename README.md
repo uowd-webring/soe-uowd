@@ -5,14 +5,6 @@ A collection of portfolio websites from UOWD School of Engineering students. Bui
 ## What is a Webring?
 A webring is a collection of websites linked together in a circular structure, allowing visitors to navigate from one site to another. Our webring specifically showcases the work and achievements of UOWD's engineering students and graduates.
 
-## Features
-
-- 🔍 Real-time search functionality
-- 🎨 Clean, minimal design
-- 📱 Fully responsive
-- ⚡️ Fast and performant
-- 🌐 Links to student portfolios
-
 ## Eligibility Requirements
 To join the webring, you must meet the following criteria:
 
