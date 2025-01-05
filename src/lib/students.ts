@@ -19,5 +19,11 @@ export const students: Student[] = [
         portfolioLink: "https://sarahchen.io"
     },
     // Add more student entries here
+    {
+        name: "test",
+        year: 2025,
+        major: "Computer Engineering",
+        portfolioLink: "https://tahayparker.co.uk"
+    },
 ];
 
