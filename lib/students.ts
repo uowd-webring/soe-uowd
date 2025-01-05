@@ -316,7 +316,7 @@ export const students: Student[] = [
         year: 2025,
         major: "Telecommunications Engineering",
         portfolioLink: "https://mayasingh.tech"
-    }
+    },
     {
         name: "John Doe",
         year: 2032,

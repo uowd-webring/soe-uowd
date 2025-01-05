@@ -1,10 +1,11 @@
 'use client'
 
-import React from 'react'
+import Header from '@/src/components/header'
 
 export default function DocsPage() {
   return (
     <main className="min-h-screen min-w-full bg-black font-sf-mono text-[14px] flex flex-col pt-[48px]">
+      <Header />
       <div className="container mx-auto px-4 sm:px-6 md:px-8 pt-24 sm:pt-28 md:pt-32 pb-16 flex-grow">
         <div className="max-w-3xl mx-auto animate-fadeIn">
           <h1 className="text-3xl sm:text-4xl font-bold text-white mb-8 font-sf-pro transition-all duration-300">

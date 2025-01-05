@@ -10,7 +10,7 @@ export const majors = [
   "Mechanical Engineering",
   "Mechatronic Engineering",
   "Civil Engineering"
-];
+] as const;
 
 // Get unique years from the students array
 export const getUniqueYears = () => {
