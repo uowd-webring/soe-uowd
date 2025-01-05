@@ -317,4 +317,10 @@ export const students: Student[] = [
         major: "Telecommunications Engineering",
         portfolioLink: "https://mayasingh.tech"
     }
+    {
+        name: "John Doe",
+        year: 2032,
+        major: "Mechanical Engineering",
+        portfolioLink: "https://google.com"
+    },
 ];
