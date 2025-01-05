@@ -10,7 +10,12 @@ export interface Student {
 
 // Student Data
 
-export const students: Student[] = [
+export const students: Student[  {
+    name: "John",
+    year: 2050,
+    major: "Computer Engineering",
+    portfolioLink: "https://google.com"
+  }] = [
     {
         name: "Ayman Mohammed",
         year: 2027,
