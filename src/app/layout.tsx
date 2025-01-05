@@ -1,6 +1,9 @@
 import type { Metadata } from "next"
 import "./globals.css"
 import React from "react"
+import Footer from "../components/footer"
+import Header from "../components/header"
+import { Providers } from "./providers"
 
 export const metadata: Metadata = {
   title: "SOE@UOWD Webring",
@@ -13,9 +16,16 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
-      <body className="font-sf-pro antialiased">
-        {children}
+    <html lang="en" suppressHydrationWarning>
+      <head />
+      <body className="font-sf-pro antialiased bg-black min-h-screen">
+        <Providers>
+          <Header />
+          <div className="relative min-h-screen pb-12">
+            {children}
+          </div>
+          <Footer />
+        </Providers>
       </body>
     </html>
   )
