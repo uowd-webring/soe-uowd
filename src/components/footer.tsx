@@ -30,7 +30,7 @@ export default function Footer() {
         <div className="flex items-center gap-2">
           <div className="relative flex">
             <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>
-            <div className="absolute inset-0 w-2 h-2 rounded-full bg-green-500 animate-ping"></div>
+            <div className="absolute inset-0 w-2 h-2 rounded-full bg-green-500"></div>
           </div>
           <p className="text-[rgb(160,160,160)] text-sm">
             Updated {lastUpdate}
