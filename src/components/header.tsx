@@ -8,8 +8,6 @@ import {
   NavbarContent,
   NavbarItem,
   NavbarMenuToggle,
-  NavbarMenu,
-  NavbarMenuItem,
 } from "@nextui-org/react"
 
 export default function Header() {
@@ -33,10 +31,10 @@ export default function Header() {
 
   const menuItems = [
     { name: "Docs", href: "/docs" },
+    { name: "Resources", href: "/resources" },
     { name: "Add Portfolio", href: "/add" },
     { name: "GitHub", href: "https://github.com/uowd-webring/soe-uowd", external: true },
     { name: "SOE@UOWD", href: "https://www.uowdubai.ac.ae/degrees/bachelors/engineering", external: true },
-    { name: "SOCS@UOWD", href: "#", external: true },
   ]
 
   const renderLink = (item: typeof menuItems[0], className: string) => {

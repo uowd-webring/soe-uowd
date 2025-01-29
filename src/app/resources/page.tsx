@@ -1,16 +1,15 @@
 'use client'
 
 import Header from '@/src/components/header'
-import Link from 'next/link'
 
-export default function DocsPage() {
+export default function ResourcesPage() {
   return (
     <main className="min-h-screen min-w-full bg-black font-sf-mono text-[14px] flex flex-col pt-[48px]">
       <Header />
       <div className="container mx-auto px-4 sm:px-6 md:px-8 pt-24 sm:pt-28 md:pt-32 pb-16 flex-grow">
         <div className="max-w-3xl mx-auto animate-fadeIn">
           <h1 className="text-3xl sm:text-4xl font-bold text-white mb-8 font-sf-pro transition-all duration-300">
-            SOE@UOWD Webring Documentation
+            SOE@UOWD Webring Resources
           </h1>
           
           <section className="mb-12 opacity-0 animate-fadeIn" style={{ animationDelay: '100ms' }}>
@@ -67,7 +66,7 @@ export default function DocsPage() {
             <div className="mb-8">
               <h3 className="text-lg sm:text-xl text-white mb-3 font-sf-pro transition-all duration-300">Method 2: Manual Submission (For those new to Git)</h3>
               <ol className="list-decimal list-inside text-[rgb(160,160,160)] space-y-2 text-base sm:text-lg ml-4 transition-all duration-300">
-                <li className="hover:text-white transition-all duration-300">Fill out our online submission form <Link href="/add" target="_blank">here</Link></li>
+                <li className="hover:text-white transition-all duration-300">Fill out our online submission form at [Form URL]</li>
                 <li className="hover:text-white transition-all duration-300">Include the following information:
                   <ul className="list-disc list-inside ml-6 mt-2 space-y-2">
                     <li className="hover:text-white transition-all duration-300">Your full name</li>
