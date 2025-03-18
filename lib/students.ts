@@ -21,7 +21,7 @@ export const students: Student[] = [
         name: "Taha Yaseen Parker",
         year: 2027,
         major: "Computer Engineering",
-        portfolioLink: "https://tahayparker.com"
+        portfolioLink: "https://tahayparker.vercel.app"
     },
     {
         name: "Sarah Chen",
